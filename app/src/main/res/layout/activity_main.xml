@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:id="@+id/gamebar"
+        android:background="#3F51B5"
+        android:backgroundTint="#ffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/info"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="0dp"
+                android:text="@string/turn"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/wPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/newGamePlease"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_newgame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/info"
+            android:text="@string/new_game"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameZone"
+        android:layout_below="@id/gamebar"
+        android:orientation="vertical"
+        android:background="#473FB5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameZone"
+        android:id="@+id/Gstatus"
+        android:text="Playing"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

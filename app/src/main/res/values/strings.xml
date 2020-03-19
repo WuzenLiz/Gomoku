@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gomoku+</string>
+    <string name="new_game">New Game</string>
+    <string name="turn">Lượt của:</string>
+    <string name="newGamePlease">Hãy tạo game mới</string>
+    <string name="nwGame">Chơi mới</string>
+    <string name="info1">Hãy nhấn chơi mới</string>
+</resources>
